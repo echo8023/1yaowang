@@ -1,0 +1,68 @@
+<!-- 
+    一、数据库建表
+    二、连接数据库--后端PHP(之后还需要连接数据库，就是引入该连接好了的数据库)
+    三、先获取前端表单提交的注册数据，添加到数据库中
+    ----点击注册按钮，将数据添加到数据库（前端不能直接到数据库，要通过中间的后端，所以流程是前端-后端-数据库）
+    前端到后端，可用ajax或者form表单(属性action,告诉它表单的数据往哪里填--写入后端接收数据的文件路径，这是后端需要的一个文件，接收这些传来的数据.在服务器下打开后，浏览器输入框的地址为其路径)这样表单提交后就能跳转到后端那个接收数据的文件里面来了
+
+    1.后端先数据库链接上---通过require引入数据库链接
+    2.后端判断前端用户是否点击/提交了submit按钮(点击了后，能接收到前端输入表单的值。通过name传递值，不点击得不到)
+    看有没有name=submit，因为day21天聊过，php通过$_POST/GET[表单的name值]方式接收值
+    3.将获取的数据，添加到数据库
+
+    四、再获取输入框输入的数据，检测输入的用户名是否重名，当该输入框失去焦点时(表单还没提交，无法用form+post)，同步检测是否存在于数据库中(将用户名传给后端，此时传输数据用的是ajax)
+    五、登录页面--将用户名和密码传给后端，后端去和数据库匹配，将匹配的结果返回前端(login.js要取到login.html页面的用户名和密码)
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 首页 未登录时状态-->
+    <div class="index">
+        你好，<a href="login.html">请登录</a> <a href="register.html">请注册</a>
+    </div>
+
+
+
+
+    <!-- 账号登陆后 -->
+    <div class="login" style="display: none;">
+        你好，<span></span>欢迎光临！
+        <a href="javascript:;" class="close">退出</a>
+    </div>
+
+    <script>
+        const index=document.querySelector(".index");
+        const login=document.querySelector(".login");
+        const span=document.querySelector("span");
+        const close=document.querySelector(".close");
+        if(localStorage.getItem("customname")){
+            index.style="display:none";
+            // index.style.display="none";
+            login.style="display:block";
+            span.innerHTML=localStorage.getItem("customname");
+        }
+
+        close.onclick=function(){
+            localStorage.removeItem("customname");
+            // index.style.dispaly="block"; 这种写法结果出不来，要下面的写法 ？？？？？？？？？？？？？？？？？？？
+            // login.style.dispaly="none";
+            login.style="display:none";
+            index.style="display:block";
+        }
+    </script>
+
+    <!-- <script src="reg.js"></script> -->
+    <!-- <script src="引入封装的ajax函数文件"></script> -->
+
+</body>
+
+</html>

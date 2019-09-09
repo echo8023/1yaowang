@@ -1,0 +1,24 @@
+
+// 今日限时抢购(banner图下面的)
+.purchase_rapper a {
+  display: inline-block;
+  width: 250px;
+  height: 150px;
+  // float: left;
+}
+
+.purchase_rapper .limited_time {
+  display: inline-block;
+  width: 169px;
+  height: 150px;
+  border: 1px solid red;
+  // margin-left: 160px;
+}
+
+
+// 横幅广告图
+.wrapper_banner {
+border: 1px solid red; 
+  // margin-left: 160px;
+  margin:10px 0; 
+}

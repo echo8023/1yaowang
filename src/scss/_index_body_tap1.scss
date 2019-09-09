@@ -1,0 +1,130 @@
+// banner右侧，tap切换
+.tab1 {
+  float: left;
+  position: absolute;
+  right: 164px;
+  top: 246px;
+//   border: 1px solid red;
+  padding-left: 23px;
+  padding-bottom: 8px;
+  overflow: hidden;
+  font-size: 13px;
+}
+
+.tab1 .consult {
+  width: 72px;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  color: #707070;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.tab1 .active {
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.tab1 .item {
+  display: none;
+  width: 180px;
+  height: 200px;
+//   border: 1px solid red;
+}
+
+.tab1 .item a {
+  width: 72px;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  color: #707070;
+}
+
+// banner右侧，tap切换里面的内容
+.tab1 .item a::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-top: 2px rgba(163, 145, 145, 0.555) solid;
+  border-right: 2px rgba(163, 145, 145, 0.555) solid;
+  transform: rotate(45deg);
+}
+
+// consult_img
+.consult_img {
+  float: left;
+  cursor: pointer;
+  // width: 100%;
+}
+
+// tap2
+.tab2 {
+  float: left;
+  position: absolute;
+  right: 164px;
+  top: 590px;
+//   border: 1px solid red;
+  padding-left: 23px;
+  padding-bottom: 8px;
+  overflow: hidden;
+  font-size: 13px;
+}
+
+.tab2 .consult {
+  width: 72px;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  color: #707070;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.tab2 .active {
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.tab2 .item {
+  display: none;
+  width: 180px;
+  height: 70px;
+//   border: 1px solid red;
+}
+
+.sidenav_info {
+  width: 180px;
+  height: 110px;
+//   border: 1px solid red;
+  position: absolute;
+  right: 165px;
+  top: 475px;
+}
+
+.server_banner a {
+  width: 233px;
+}
+
+.server_banner img {
+  width: 100%;
+}
+
+h3 {
+  width: 239px;
+  height: 16px;
+  font: 12px tahoma, arial, "Microsoft Yahei", \5b8b\4f53;
+  font-weight: bold;
+  color: #000;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.server_img {
+  width: 44px;
+  height: 44px;
+  border-radius: 5px;
+}

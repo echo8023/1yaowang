@@ -1,0 +1,157 @@
+em {
+  font-style: normal;
+}
+
+.bottom {
+  border-bottom: 2px solid #d2b994;
+}
+
+.bottom_wrapper {
+  width: 1190px;
+  height: 46px;
+  // border: 1px red solid;
+  margin: 0 auto;
+}
+
+.bottom_wrapper li {
+  float: left;
+  // border: 1px blue solid;
+  //   vertical-align: middle;
+}
+
+.bottom_wrapper a {
+  font-weight: 400;
+  font-family: "Microsoft YaHei";
+  color: #505050;
+  padding: 0 16px;
+  font-size: 16px;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: 46px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+// 所有商品分类
+.all_categories {
+  width: 166px;
+  padding: 0 0 0 14px;
+  height: 45px;
+  background-color: #19323a;
+  position: relative;
+}
+
+.all_categories:hover {
+  text-decoration: underline;
+}
+
+.all_categories a {
+  color: #fff;
+  font: 400 15px/48px tahoma, arial, Microsoft YaHei;
+  font-weight: 700;
+}
+
+// 所有商品分类的下拉菜单
+.all_categories_subnav {
+  position: absolute;
+  left: 0px;
+  top: 45px;
+  // visibility: hidden;
+}
+
+.all_categories_subnav li {
+  width: 180px;
+  height: 40px;
+  background-color: #314349;
+  padding-bottom: 2px;
+  // visibility: hidden;
+}
+
+.all_categories_subnav li:hover {
+  background-color: #fff;
+  transition: all 0.1s ease-out 0s;
+  // margin-left:5px;
+}
+
+.all_categories_subnav li:hover a {
+  color: #314349;
+}
+
+.all_categories_subnav li a {
+  z-index: 100;
+  display: block;
+  font: 400 15px/48px tahoma, arial, Microsoft YaHei;
+  color: #fff;
+  width: 166px;
+  padding: 0 0 0 14px;
+}
+
+// 三级菜单，显示在轮播图上面的信息
+.subnav3_category {
+  background: #fff;
+  width: 1010px;
+  height: 420px;
+  position: absolute;
+  top: 2px;
+  left: 180px;
+  // border: 1px red solid;
+  display: none;
+  // z-index: 100;
+}
+
+.subnav3_1:hover .subnav3_category{
+  display: block;
+  z-index: 100;
+}
+
+.col{
+    float: left;
+    border-bottom: 1px solid #e8e8e7;
+}
+
+.subnav3_category dl {
+  width: 252px;
+  // height: 76px;
+  font-weight: normal;
+  font: 12px/18px Arial, tahoma, \5b8b\4f53;
+  margin-bottom: 13px;
+}
+
+.subnav3_category dt {
+  margin: 6px 0 0 23px;
+  padding: 0;
+  line-height: 20px;
+  height: 20px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.subnav3_category dd {
+    color: #999;
+    line-height: 2;
+    width: 220x;
+    margin: 0 0 0 23px;
+    padding: 0 0 6px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom:5px
+}
+.sub3_ad{
+  margin-top: 15px;
+  margin-left: -15px;
+  height: 399px;
+  width: 252px;
+}
+.sub3_ad img{
+  width: 252px;
+  float: left;
+  display: block;
+  border-right: 1px solid #e8e8e7;
+  border-left: 1px solid #e8e8e7;
+  border-bottom: 1px solid #e8e8e7;
+  // border-right: 1px solid red;
+}
+

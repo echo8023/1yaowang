@@ -1,0 +1,1 @@
+"use strict";var $consult3=$(".tab3 .consult");$consult3.on("click",function(){$(this).addClass("active").siblings().removeClass("active"),$(".tab3 .item").css({display:"none"}),$(".tab3 ."+$(this).data("show")).css({display:"block"})});

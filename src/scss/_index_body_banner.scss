@@ -1,0 +1,79 @@
+// 轮播图
+.banner {
+    width: 825px;
+    height: 414px;
+    border: 1px solid red;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    left: -2px;
+    top: -20px;
+    /* 溢出隐藏 */
+}
+
+.banner ul {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 825px;
+    height: 414px;
+    /* width: 5000px;随便加的，实际应该改了布局再计算，和无缝滚动很贴近了 */
+}
+
+.banner ul li {
+    width: 825px;
+    height: 414px;
+    float: left;
+}
+
+.banner ul li img {
+    width: 825px;
+    height: 414px;
+    // display: block;
+    // overflow: hidden;
+}
+
+
+
+.banner ol {
+    position: absolute;
+    bottom: 20px;
+    width: 125px;
+    left: 50%;
+    margin-left: -65px;
+}
+
+.banner ol li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: #ccc;
+    margin-right: 5px;
+    border-radius: 50%;
+    text-indent: -999em;
+    cursor: pointer;
+}
+
+.banner ol li.active {
+    background: orange;
+}
+
+#left,
+#right {
+    position: absolute;
+    color: #fff;
+    font-size: 60px;
+    text-decoration: none;
+    top: 50%;
+    margin-top: -30px;
+    display: none;
+    /* 箭头隐藏起来 */
+}
+
+#left {
+    left: 20px;
+}
+
+#right {
+    right: 20px;
+}

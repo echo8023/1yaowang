@@ -1,0 +1,1 @@
+"use strict";var username=document.querySelector("#username"),oSpan=document.querySelectorAll("$span")[0];username.onblur=function(){ajax({url:"http://localhost/js/meself-code/day33/php/lg&reg_php/register-data.php",data:{checkname:username.value},success:function(e){e?(oSpan.innerHTML="该用户名已存在，请重新输入",oSpan.style.color="red"):(oSpan.innerHTML="ok",oSpan.style.color="green")}})};

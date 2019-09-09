@@ -1,0 +1,307 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.login_wrapper {
+  width: 1190px;
+  height: 600px;
+  border: #e6e6e6 1px solid;
+  margin: 0 auto;
+  box-shadow: -1px 1px 10px #EFEFEF, -1px 10px 10px #EFEFEF;
+}
+
+// 头部logo
+.login_head_wrapper {
+  width: 990px;
+  height: 98px;
+  margin: 0 auto;
+  //   overflow: hidden;
+  //   margin: 0 auto;
+  //   border: 1px blue solid;
+  border-bottom: #0083ce 2px solid;
+}
+
+// 左边二维码
+.login_QR_wrapper {
+  float: left;
+  width: 560px;
+  //   margin: 0 auto;
+  margin-left: 100px;
+  //   border: 1px blue solid;
+  //   border-top: #0083ce 2px solid;
+}
+
+// 右侧
+.ways_wrap {
+  width: 398px;
+  margin-left: 660px;
+  padding-left: 30px;
+  padding-top: 2px;
+  border-bottom: 1px solid #e2e2e2;
+  border: 1px pink solid;
+  font: 12px "Lucida Grande", tahoma, arial, \5b8b\4f53;
+}
+
+.lg_ways {
+  height: 40px;
+}
+
+// 普通登陆    // 快捷登陆
+.commonLogin,
+.quickLogin {
+  float: left;
+  position: relative;
+  width: 48%;
+  height: 35px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 35px;
+  color: #5e5e5e;
+  border-bottom: 1px green solid;
+  cursor: pointer;
+}
+
+.commonLogin:before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #e2e2e2;
+}
+
+// 切换里面的内容
+.commonLogin_content {
+  width: 380px;
+}
+
+.lg_title {
+  font-size: 16px;
+  padding: 0;
+  margin: 13px 0;
+  //   border: 1px blue solid;
+  color: #5e5e5e;
+  font-weight: normal;
+  //   height: 40px;
+}
+
+.lg_title span {
+  float: right;
+  font-size: 12px;
+  margin-top: 7px;
+  font-family: \5b8b\4f53;
+  color: #5e5e5e;
+}
+
+// 免费注册
+a.blue_link {
+  color: #0083ce;
+}
+
+// 用户名和密码的input框
+.lg_row {
+  min-height: 68px;
+  height: 68px;
+  width: 340px;
+  position: relative;
+}
+.lg_row #username,
+.lg_row #psd {
+  display: block;
+  width: 286px;
+  height: 26px;
+  padding: 6px 12px 6px 40px;
+  font: 12px "Lucida Grande", tahoma, arial, \5b8b\4f53;
+  font-size: 14px;
+  line-height: 1.428571429;
+  //   vertical-align: middle;
+  background-color: transparent;
+  border: 1px solid #e6e6e6;
+  -webkit-appearance: none;
+  color: #5e5e5e;
+  background: url(https://s.maiyaole.com/images/passport/regest.png) no-repeat 0
+    0;
+}
+
+.lg_row #username {
+  background-position: 8px -114px;
+}
+
+.lg_row #psd {
+  background-position: 8px -145px;
+}
+
+// 忘记密码
+.fr {
+  float: right;
+}
+
+//验证码
+.verify_box .u_verify {
+  width: 150px;
+  margin-right: 10px;
+  padding-left: 10px;
+  float: left;
+}
+
+.form-control {
+  display: block;
+  width: 286px;
+  height: 26px;
+  padding: 6px 12px 6px 40px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  background-color: transparent;
+  border: 1px solid #e6e6e6;
+  -webkit-appearance: none;
+}
+
+.verifyimg {
+  margin-left: 10px;
+  float: left;
+}
+
+.verifylink {
+  float: left;
+  margin-left: 10px;
+  line-height: 40px;
+  color: #0083ce;
+}
+
+span.error {
+  color: #e72418;
+  display: block;
+  width: 75px;
+}
+
+// 两周内免登录
+
+// 登录按钮
+.login_btn {
+  width: 326px;
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 8px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  background-color: #0099f1;
+  width: 340px;
+  border-bottom: #0083ce 2px solid;
+  color: #fff;
+  font: 18px "microsoft yahei";
+}
+
+// 协议提示
+.protocal_warm {
+  padding-top: 10px;
+}
+
+// 合作伙伴
+.hz_login {
+  padding-bottom: 15px;
+  overflow: hidden;
+  min-height: 68px;
+  height: 68px;
+  width: 340px;
+}
+
+.hz_login p {
+  margin-top: 5px;
+  line-height: 24px;
+  color: #5e5e5e;
+}
+
+.yhd,
+.zfb,
+.qq,
+.sina,
+.wlt,
+.wy,
+.wx {
+  background: url(https://s.maiyaole.com/images/201306/images/private/img_zhifu.png)
+    no-repeat left top;
+  display: block;
+  float: left;
+  height: 39px;
+  margin-right: 18px;
+  width: 39px;
+  border: none;
+}
+
+.hz_login a {
+//   line-height: 24px;
+//   color: #a5a5a5;
+  text-indent: -9999px;
+}
+
+// 更多
+.moreWebDiv {
+  cursor: pointer;
+  display: block;
+  margin-right: 27px;
+  margin-top: -52px;
+  position: relative;
+  z-index: 100;
+}
+
+.moreWeb {
+  cursor: pointer;
+  float: right;
+  display: block;
+  margin-right: 11px;
+  margin-top: 10px;
+  color: #5e5e5e;
+}
+
+.moreWebBtn {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    float: right;
+    border: none;
+    background: url("https://s.maiyaole.com/images/201306/images/private/upanddown.png") no-repeat left top;
+    background-position: -7px -7px;
+}
+
+
+
+// 尾部
+.common_footer_simple{
+    padding-top: 30px;
+}
+.common_footer_simple, .copy_info {
+    // padding: 30px 0 20px 0;
+    text-align: center;
+    color: #a5a5a5;
+    font: 12px "Lucida Grande", tahoma, arial, \5b8b\4f53;
+}
+
+.common_footer_simple a {
+    display: inline-block;
+    line-height: 26px;
+    margin: 0 5px;
+    color: #a5a5a5;
+    font: 12px "Lucida Grande", tahoma, arial, \5b8b\4f53;
+}
+.common_footer_simple p{
+    line-height: 26px;
+}
+

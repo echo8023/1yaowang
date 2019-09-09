@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><meta http-equiv=X-UA-Compatible content="ie=edge"><title>Document</title></head><body><div class=index>你好，<a href=login.html>请登录</a> <a href=register.html>请注册</a></div><div class=login style="display: none;">你好，<span></span>欢迎光临！ <a href=javascript:; class=close>退出</a></div><script>
+        const index=document.querySelector(".index");
+        const login=document.querySelector(".login");
+        const span=document.querySelector("span");
+        const close=document.querySelector(".close");
+        if(localStorage.getItem("customname")){
+            index.style="display:none";
+            // index.style.display="none";
+            login.style="display:block";
+            span.innerHTML=localStorage.getItem("customname");
+        }
+
+        close.onclick=function(){
+            localStorage.removeItem("customname");
+            // index.style.dispaly="block"; 这种写法结果出不来，要下面的写法 ？？？？？？？？？？？？？？？？？？？
+            // login.style.dispaly="none";
+            login.style="display:none";
+            index.style="display:block";
+        }
+    </script></body></html>

@@ -1,0 +1,198 @@
+// header middle
+.middle-wrapper {
+  width: 1190px;
+  height: 160px;
+  // border: 1px solid rgb(47, 0, 255);
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+//   border: 1px solid red;
+  width: 180px;
+  //   height: 110px;
+  padding-top: 26px;
+  padding-right: 100px;
+}
+
+.logo a {
+  background: url("https://s.maiyaole.com/images/common/logo_01.png") no-repeat;
+  text-decoration: none;
+  display: block;
+  text-indent: -9999px;
+  width: 180px;
+  height: 61px;
+//   border: 1px solid red;
+}
+
+.search {
+  padding-top: 26px;
+//   border: 1px solid green;
+}
+
+.search_form {
+  float: left;
+//   border: 1px solid red;
+  position: relative;
+  //   margin-right: 130px;
+}
+
+.placeholder {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  line-height: 40px;
+  padding-left: 12px;
+  color: #5e5e5e;
+  width: 393px;
+  height: 30px;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.search_form input {
+  //   width: 532px;
+  //   height: 46px;
+  //   border: 1px solid red;
+  width: 435px;
+  outline: 0;
+  float: left;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 5px 0 9px;
+  border: 1px solid #c7a774;
+  color: #666;
+  font-size: 15px;
+  vertical-align: middle;
+  background-color: #fff;
+}
+
+// 搜索框tips
+.search_tips {
+  font: 12px tahoma, arial, "Microsoft Yahei", \5b8b\4f53;
+  color: #5e5e5e;
+//   border: 1px solid red;
+  float: left;
+
+  height: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 10px;
+  width: 534px;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.search_tips a {
+  font: 12px tahoma, arial, "Microsoft Yahei", \5b8b\4f53;
+  color: #5e5e5e;
+  padding: 0 6px 0 0;
+  margin-right: 6px;
+  height: 16px;
+  line-height: 16px;
+  font-family: Arial;
+}
+
+.red {
+    color: #e54948!important;
+}
+
+.search_tips a:hover {
+  color: #e54948;
+  text-decoration: underline;
+}
+
+.searchBtn {
+  width: 82px;
+  height: 46px;
+  float: left;
+  line-height: 55px;
+  border: 1px solid #c7a774;
+  cursor: pointer;
+  background-color: #fff;
+  margin-left: -1px;
+}
+
+// 二维码
+.QR-code {
+  position: absolute;
+  right: 320px;
+  top: 20px;
+  height: 115px;
+  width: 123px;
+  margin-top: 22px;
+//   border: 1px solid red;
+}
+
+.QR-code img {
+  width: 100px;
+//   border: 1px solid red;
+  margin-top: 22px;
+}
+
+// 迷你购物车
+.minicart {
+  width: 140px;
+  font-size: 12px;
+  position: relative;
+  top: -130px;
+  right: -1212px;
+  margin-bottom: -41px;
+  z-index: 99;
+  border: 1px solid #eee;
+}
+
+.minicart a {
+  background-position: 10px -312px;
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  color: #5e5e5e;
+  background: url(https://s.maiyaole.com/images/201306/images/common_sprite.png?t==20141218)
+    no-repeat left -311px;
+}
+
+.cart_num {
+  display: block;
+  position: absolute;
+  float: left;
+  top: 3px;
+  line-height: 10px;
+  width: auto;
+  min-width: 12px;
+  text-align: center;
+  // vertical-align: middle;
+  left: 30px;
+  font-weight: 700;
+  font-family: tahoma;
+  font-style: normal;
+  color: #fff;
+  font-size: 12px;
+  height: 12px;
+  padding: 2px;
+  background: red;
+  border-radius: 16px;
+}
+
+.minicart span {
+  position: absolute;
+  width: 50px;
+  left: 55px;
+  background-position: -110px -312px;
+  padding-right: 15px;
+  background: url(https://s.maiyaole.com/images/201306/images/common_sprite.png?t==20141218)
+    no-repeat right -311px;
+}
+
+// 购物车二级菜单
+// .subnav_minicart_list {
+//   position: absolute;
+//   width: 350px;
+//   margin-left: -221px;
+//   margin-top: -1px;
+//   z-index: 10000;
+//   border: #e72418 1px solid;
+//   border-top: #e72418 2px solid;
+//   font: 12px Arial, tahoma, \5b8b\4f53;
+//   background: #fff;
+// }

@@ -1,0 +1,263 @@
+// 底部的tap切换
+.footer_tap_wrapper {
+  border: 1px solid #e6e6e6;
+  height: 168px;
+  overflow: hidden;
+  width: 1188px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.fri_tit {
+  background: #f8f8f8;
+  border-bottom: 1px solid #e6e6e6;
+  margin: 0;
+  padding: 0;
+}
+
+// 清除浮动？？？？？
+.fri_tit:after {
+  height: 0;
+  visibility: hidden;
+  content: ".";
+  display: block;
+  clear: both;
+}
+
+.fri_tit li {
+  // display: inline;
+  float: left;
+  width: 178px;
+  height: 33px;
+  border-right: 1px solid #e6e6e6;
+  font-size: 12px;
+  line-height: 33px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.fri_tit li.active {
+  background: #fff;
+  font-weight: 700;
+  height: 34px;
+  margin-bottom: -1px;
+}
+
+// banner右侧，tap切换里面的内容--item1、item2
+.tab3 .item1 {
+  padding: 8px 0 15px 8px;
+  height: 102px;
+}
+
+.tab3 .item1 a {
+  background-position: 0 top;
+  float: left;
+  display: block;
+  background: url(https://s.maiyaole.com/images/201306/images/img_btm_logo.png)
+    no-repeat;
+  width: 110px;
+  height: 46px;
+  text-indent: -9999px;
+  margin: 7px 8px 0 0;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  text-decoration: none;
+  color: #333;
+}
+
+.tab3 .item1 a:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.tab3 .item1 .btm_logo02 {
+  background-position: -118px top;
+}
+
+.tab3 .item1 .btm_logo03 {
+  background-position: -236px top;
+}
+
+.tab3 .item1 .btm_logo04 {
+  background-position: -354px top;
+}
+
+.tab3 .item1 .btm_logo05 {
+  background-position: -472px top;
+}
+
+.tab3 .item1 .btm_logo06 {
+  background-position: -590px top;
+}
+
+.tab3 .item1 .btm_logo07 {
+  background-position: -708px top;
+}
+
+.tab3 .item1 .btm_logo08 {
+  background-position: -826px top;
+}
+
+.tab3 .item1 .btm_logo09 {
+  background-position: -944px top;
+}
+
+.tab3 .item1 .btm_logo10 {
+  background-position: -1062px top;
+}
+
+.tab3 .item1 .btm_logo11 {
+  background-position: 0 -53px;
+}
+
+.tab3 .item1 .btm_logo12 {
+  background-position: -118px -53px;
+}
+
+.tab3 .item1 .btm_logo13 {
+  background-position: -236px -53px;
+}
+
+.tab3 .item1 .btm_logo14 {
+  background-position: -354px -53px;
+}
+
+.tab3 .item1 .btm_logo15 {
+  background-position: -472px -53px;
+}
+
+.tab3 .item1 .btm_logo16 {
+  background-position: -590px -53px;
+}
+
+.tab3 .item1 .btm_logo17 {
+  background-position: -708px -53px;
+}
+
+.tab3 .item1 .btm_logo18 {
+  background-position: -826px -53px;
+}
+
+.tab3 .item1 .btm_logo19 {
+  background-position: -944px -53px;
+}
+.tab3 .item1 .btm_logo20 {
+  background-position: -1062px -53px;
+}
+
+.tab3 .item2 {
+  padding-top: 20px;
+  margin-left: 30px;
+  padding: 10px 0;
+  color: #5e5e5e;
+}
+
+.tab3 .item2 a {
+  display: block;
+  width: 128px;
+  height: 26px;
+  float: left;
+  font: 12px tahoma, arial, "Microsoft Yahei", \5b8b\4f53;
+  color: #666;
+  margin: 0;
+  text-decoration: none;
+}
+
+.tab3 .item2 a:hover {
+  text-decoration: underline;
+}
+
+.tab3 .item2:after {
+  height: 0;
+  visibility: hidden;
+  content: ".";
+  display: block;
+  clear: both;
+}
+
+
+// 图标
+.new_ft_commit {
+    padding-top: 62px;
+    clear: both;
+}
+
+.new_ft_commit_con {
+    width: 1190px;
+    height: 100px;
+    margin: 0 auto;
+    background: url(https://s.maiyaole.com/images/201306/images/jsyhm.png) no-repeat 0 0;
+}
+
+// 二维码
+.new_app_part {
+    margin-top: 60px;
+    // border: 1px red solid;
+}
+
+.new_app_part_con {
+    width: 1190px;
+    margin: 0 auto;
+    overflow: hidden;
+    // border: 1px red solid;
+}
+
+.new_app_part_ul {
+    float: left;
+    // padding-left: 110px;  失效了？？？，加在内联样式中
+    margin: 0;
+    padding: 0;
+}
+
+.new_app_part_ul li {
+    width: 255px;
+    float: left;
+    list-style: none;
+}
+
+.new_app_part_ul .code_img {
+    width: 94px;
+    height: 94px;
+    float: left;
+    margin-right: 12px;
+}
+
+img {
+    vertical-align: top;
+}
+
+.new_app_part_ul .app_part_right {
+    padding-top: 27px;
+}
+
+.new_app_part_ul .app_part_right .h2_tt {
+    font-size: 15px;
+    color: #1c1c1c;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+// 热线tel
+.service_port {
+    width: 250px;
+    float: right;
+    border-left: 1px solid #eee;
+    text-align: center;
+    padding: 15px 0;
+    margin-right: 50px;
+}
+
+.service_port .tel {
+    font-size: 20px;
+    color: #c7a774;
+    font-weight: 700;
+}
+
+.service_port .service_time {
+    color: #999;
+    line-height: 18px;
+    padding-top: 8px;
+}
+
+
+// footer灰色部分

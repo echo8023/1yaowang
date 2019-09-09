@@ -1,0 +1,428 @@
+// 导航
+// .detailnav1_wrap1{
+//   border: #0193e8 1px solid;
+// }
+
+.detailnav1 {
+  border-bottom: 0;
+  padding: 10px 0 18px;
+  position: relative;
+  font: 12px tahoma,arial,"Microsoft Yahei",\5b8b\4f53;
+    color: #5E5E5E;
+    // border: #0193e8 1px solid;
+    width: 990px;
+    margin: 0 auto;
+    
+}
+
+.detailnav1 .linkhome {
+  background: url(https://s.maiyaole.com/images/201306/img/yw_home.png) no-repeat scroll 0 -2px transparent;
+  display: inline-block;
+  padding-left: 25px;
+}
+
+.detailnav1 a {
+  color: #333;
+  outline-style: none;
+  text-decoration: none;
+}
+
+.detailnav1 .arrow {
+  font-family: "宋体";
+  margin: 0 8px;
+}
+
+// 商品详情页---放大镜效果
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content_wrap2{
+  // border: #e8d101 2px solid;
+  width: 990px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+.detail {
+  margin: 30px 0 0 0px;
+  float: left;
+  position: relative;
+}
+
+.spic {
+  width: 298px;
+  height: 298px;
+  border: 1px solid #ccc;
+  float: left;
+  margin-right: 10px;
+  /* 因为效果上看，两个盒子有间距 */
+  position: relative;
+}
+
+.spic img {
+  width: 298px;
+  height: 298px;
+  display: block;
+}
+
+/* 右边的大放大镜 和左边的小放大镜&小图在一行显示。所以spic和bf都要浮动*/
+.sf {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  /* 小放大镜是能移动的，移动需要定位。相对于小图,所以spic加相对定位 */
+  // background: url(../img/bg.png);
+  /* 用的一张背景图做的 */
+  left: 0;
+  top: 0;
+  // visibility: hidden;
+  display: none; /* 大小放大镜一开始都需要隐藏，只有鼠标移动进去时才会出现 */
+
+    background-color: #FFF;
+    -moz-opacity: .6;
+    opacity: .6;
+    filter: alpha(opacity = 60);
+    z-index: 120;
+    border: 1px solid #CCC;
+    z-index: 101;
+    cursor: crosshair;
+}
+
+
+.bf {
+  width: 475px;
+  height: 475px;
+  border: 1px solid #ccc;
+  float: left;
+  position: absolute;
+  left: 314px;
+  overflow: hidden;
+  /* 因为750的图片放进去太大了，所以需要溢出隐藏 */
+  display: none;
+  // visibility: hidden;
+  z-index: 100;
+}
+
+.bpic {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 640px;
+  height: 850px;
+}
+
+// 商品详情页---加入购物车
+// body {
+//     padding: 10px;
+//     font-size: 12px;
+// }
+
+// .cartlist table {
+//     width: 1078px;
+// }
+
+// .cartlist table,
+// .cartlist td {
+//     border: 1px solid red;
+//     border-collapse: collapse;
+//     text-align: center;
+// }
+
+// table img {
+//     width: 100px;
+// }
+
+// table td {
+//     padding: 10px 10px;
+// }
+
+// .cartlist{
+//     float: left;
+// }
+
+.box {
+  float: left;
+  width: 465px;
+  // border: 1px saddlebrown solid;
+  margin: 30px 0 0 0px;
+  font: 12px tahoma, arial, "Microsoft Yahei", \5b8b\4f53;
+  color: #5e5e5e;
+}
+
+.box_title {
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: "microsoft yahei";
+}
+
+.strong {
+  float: left;
+  margin-right: 6px;
+  margin-top: 2px;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  width: 39px;
+  height: 21px;
+  background-image: url(https://s.maiyaole.com/images/common/activity/detail_saleSelf.png);
+  color: #0193e8;
+}
+
+.red {
+  color: #e54948 !important;
+}
+// .box ul{
+//     float: left;
+// }
+
+.box ul li {
+  // width: 100%;
+  float: left;
+  // height: 300px;
+  // border: 1px solid red;
+  list-style: none;
+  // margin-right: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.box ul li img {
+  height: 160px;
+}
+
+.box ul li p {
+  text-align: left;
+  margin: 10px 0;
+  // height: 48px;
+}
+
+.box ul li span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.box ul li button {
+  padding: 5px 20px;
+}
+
+.price_dt {
+  padding-top: 12px;
+  line-height: 22px;
+}
+
+.good_price {
+  margin-right: 0;
+  color: #e72418;
+  font-weight: 400;
+  line-height: 22px;
+  padding-top: 6px;
+  padding-right: 6px;
+  font-size: 24px;
+}
+
+// 减满
+.icon_meng {
+  float: left;
+  margin-right: 6px;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  width: 32px;
+  height: 18px;
+  background-image: url(https://s.maiyaole.com/images/common/activity/detail_promotion.png);
+  color: #fff;
+  margin-top: -1px;
+  // vertical-align: middle;
+}
+
+.zenping {
+  color: #505050;
+  // border: #0193e8 1px solid;
+  margin-left: -170px;
+  // vertical-align: middle;
+}
+
+// 数量
+.num_box {
+  position: relative;
+  width: 106px;
+  z-index: 10;
+}
+
+.num_btn {
+  // float: left;
+  width: 73px;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 5px;
+  border: 1px solid #e6e6e6;
+  font-size: 14px;
+}
+
+.num_pre,
+.num_next {
+  background-image: url(https://s.maiyaole.com/images/product/icon_detail.png?t==20141219);
+  background-repeat: no-repeat;
+  font-family: "microsoft yahei";
+  outline: 0;
+}
+
+.num_pre {
+  background-position: -131px -842px;
+  height: 19px;
+  width: 19px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.num_next {
+  background-position: -131px -863px;
+  height: 19px;
+  width: 19px;
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: none;
+  cursor: pointer;
+}
+
+// 立即扫描
+.mobPrice {
+  width: 240px;
+  // height: 28px;
+  border: 1px solid #e6e6e6;
+  background-color: #f8f8f8;
+  position: relative;
+  text-indent: 4px;
+  margin-bottom: 14px;
+  font-family: "Microsoft Yahei";
+  font-size: 12px;
+  color: #5e5e5e;
+  line-height: 28px;
+}
+
+// 扫描icon
+.mobPrice i {
+  display: block;
+  width: 15px;
+  height: 19px;
+  line-height: 28px;
+  background: url(https://s.maiyaole.com/images/201306/images/mobPrice.png) 0 0
+    no-repeat;
+  margin: 5px;
+  float: left;
+}
+
+// 购物车按钮
+.btn_shopping_cart {
+  width: 240px;
+  height: 53px;
+  vertical-align: top;
+  background-color: #e72418;
+  background-position: 50px -763px;
+  background-repeat: no-repeat;
+  border: none;
+  border: 0 solid #9a0900;
+  height: 50px;
+  padding: 0 60px 0 90px;
+  border-bottom: 3px solid #9a0900;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.proTips {
+  margin-top: 20px;
+  color: #999;
+  line-height: 1.6;
+}
+
+.proTips a {
+  color: #505050;
+}
+
+// 承诺
+.proTips i,
+.proTips a {
+  display: inline-block;
+}
+
+.proTips i {
+  height: 19px;
+  width: 17px;
+  background-image: url(https://s.maiyaole.com/images/product/icon_detail.png?t==20141219);
+  background-repeat: no-repeat;
+  font-family: "microsoft yahei";
+  outline: 0;
+  background-position: 0 -1142px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+
+// 右侧放心购买及二维码
+.right_property {
+  margin: 30px 13px 0 0px;
+  float: right;
+  width: 189px;
+  height: 240px;
+  border: 1px solid #e6e6e6;
+  font: 12px tahoma,arial,"Microsoft Yahei",\5b8b\4f53;
+    color: #5E5E5E;
+}
+
+h3.h3blue {
+  width: 165px;
+  height: 64px;
+  padding: 9px 13px;
+  line-height: 1.5;
+  background-color: #0083ce;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+  margin: -1px -1px 0;
+}
+
+h3.h3blue span {
+  font-weight: 700;
+  display: block;
+}
+
+h3.h3blue a {
+  color: #fff;
+}
+
+.erweima {
+  padding: 13px 10px;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.d_app {
+  text-align: center;
+  font-weight: 700;
+}
+
+.d_app a {
+  color: #333;
+}
+
+.erwei_img {
+  text-align: center;
+  width: 170px;
+  height: 120px;
+}
+
+.erwei_img img {
+  width: 120px!important;
+  height: 120px!important;
+  vertical-align: top;
+}
