@@ -98,8 +98,8 @@ $(".backtop").on("click", function () {
 // 二、渲染数据效果(jquery ajax)
 $.ajax({
     type: 'get', //请求方式，默认采用get。
-    // url: 'http://localhost/js1907/dataphp/piclist.php', //接口地址：一定存在
-    url: "http://localhost/js/meself-code/day33/php/3-floor_datalist.php",
+    // url: 'http://10.31.157.31/js1907/dataphp/piclist.php', //接口地址：一定存在
+    url: "http://10.31.157.31/js/meself-code/day33/php/3-floor_datalist.php",
     data: "data",
     dataType: 'json',//返回的是json格式。
     // async: true, //默认异步

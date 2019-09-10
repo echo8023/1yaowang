@@ -39,11 +39,11 @@
                 </h2>
 
 
-                <form action="http://localhost/js/meself-code/day33/php/lg_reg_php/login.php"  method="POST" autocomplete="off">
+                <form autocomplete="off"  id="actionForm" name="actionForm"></form>
                     <div class="lg_row">
                         <!-- 用户名 -->
                         <label for="username">用户名：</label>
-                        <input type="text" name="username" id="username" autocomplete="off" placeholder="邮箱/手机号/用户名">
+                        <input type="text" name="username" id="username" autocomplete="off" placeholder="邮箱/手机号">
                         <i></i>
                     </div>
                     <div class="lg_row">
@@ -75,7 +75,7 @@
                     </label>
 
                     <!-- 登录 -->
-                    <input type="submit" value="登录" id="login" class="login_btn">
+                    <input type="submit" value="登录" id="login" class="login_btn"><i></i>
 
                     <!-- 协议确认 -->
                     <div class="protocal_warm">
@@ -166,7 +166,8 @@
 
     <!-- 用jquery中的ajax -->
     <!-- 引入login.js文件 -->
-    <script src="login.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/login.js"></script>
 </body>
 
 </html>

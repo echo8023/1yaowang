@@ -69,7 +69,7 @@ li {
 #louceng_content .louceng #header {
   width: 1190px;
   //   height: 1000px;
-  background: #cc6633;
+  // background: #cc6633;
   margin: 0 auto;
   //   font-size: 50px;
   //   line-height: 1000px;
@@ -86,7 +86,7 @@ li {
   float: left;
   width: 180px;
   height: 485px;
-  border: 1px blue solid;
+  // border: 1px blue solid;
 }
 
 .F1_left h2 {
@@ -130,9 +130,12 @@ li {
   float: left;
   height: 284px;
 }
-
+.F1_right_top li img{
+  display: inline-block
+}
 .img22 {
   width: 196px;
+  
 }
 
 .F1_right_bottom li {
@@ -171,7 +174,7 @@ li {
 
 // 2F-9F
 .f2{
-  border-top: 2px solid #ffa27a;
+  // border-top: 2px solid #ffa27a;
   margin-top: 30px;
   width: 1190px;
   height: 485px;
