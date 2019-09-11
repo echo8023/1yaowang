@@ -11,7 +11,7 @@ if($conn->connect_error){
 }
 
 // 此页面在服务器下打开，地址栏中的链接就为得到的接口数据。再通过ajax进行数据交互
-// http://localhost/js/meself-code/day33/php/3-floor_datalist.php    //得到的接口数据
+// http://10.31.157.31/js/meself-code/day33/php/3-floor_datalist.php    //得到的接口数据
 
 // define()
 // define( string $name , mixed $value [, bool $case_insensitive ])

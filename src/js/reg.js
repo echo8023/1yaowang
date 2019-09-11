@@ -157,6 +157,7 @@ $checkpsd.blur(function () {
         if ($checkpsd.val() === $psd.val()) {
             $i[2].innerText = '√';
             $i[2].style.cssText = 'color:green;';
+            checkpsdflag = true;
         } else {
             $i[2].innerText = '两次密码不一致';
             $i[2].style.cssText = 'color:red;';
@@ -186,7 +187,7 @@ $form.submit = function () {
         $i[0].innerText = "请输入内容";
         $i[0].innerText = "邮箱格式有误";
         $i[0].innerText = "邮箱不能为空";
-        emailflag = false;
+        usernameflag = false;
     }
 
     if ($psd.value === "") {
@@ -196,11 +197,10 @@ $form.submit = function () {
         $i[1].innerText = "密码不能为空";
         pswflag = false;
     }
-    if ($i[2].value === '') {
+    if ($checkpsd.value === '') {
         $i[2].innerText = '密码重复不能为空';
+        $i[2].innerText = '两次密码不一致';
         $i[2].style.cssText = 'color:red;';
-        checkpsdflag = false;
+        checkpsdflag = false;    
     }
-
-
 };

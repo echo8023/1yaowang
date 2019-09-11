@@ -26,7 +26,7 @@ if(isset($_POST["submit"])){
     // $sql="insert into usertable(`username`,`password`,`email`,`date`) values('$username', '$psd' ,'$email',NOW())"; //日期自动的，函数NOW()
     if($conn->query($sql) === TRUE ) {
         // 3.注册成功，PHP的跳转--通过header("location:url")
-        header("location:http://localhost/js/meself-code/day33/src/login.html");
+        header("location:http://10.31.157.31/js/meself-code/day33/src/login.html");
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
